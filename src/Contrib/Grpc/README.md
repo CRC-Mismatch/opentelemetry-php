@@ -12,6 +12,9 @@ gRPC transport for OpenTelemetry.
 This package provides a transport which can be used by `open-telemetry/exporter-otlp` to send protobuf-encoded telemetry
 over gRPC.
 
+Although it's able to work with the native `grpc/grpc` library, it's highly recommended to make the `grpc` PHP extension
+available in production environments for better performance.
+
 ## Documentation
 
 https://opentelemetry.io/docs/instrumentation/php/exporters/#otlp
